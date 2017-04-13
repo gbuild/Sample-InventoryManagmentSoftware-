@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IMS"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Icon="Images/Icons/Icon.ico"
+        Title="QuantumSoftware" Height="720" Width="1280" WindowStartupLocation="CenterScreen">
     <Grid>
         
     </Grid>
