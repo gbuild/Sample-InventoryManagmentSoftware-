@@ -5,9 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IMS"
         mc:Ignorable="d"
+        ResizeMode="NoResize"
         Icon="Images/Icons/Icon.ico"
         Title="QuantumSoftware" Height="720" Width="1280" WindowStartupLocation="CenterScreen">
-    <Grid>
-        
-    </Grid>
+    <!-- Элементы управления -->
+        <StackPanel>
+            <StackPanel>
+                <Grid Height="100" Background="LightBlue">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBlock Text="Product" Grid.Column="0" Grid.Row="0" />
+                <TextBlock Text="Product2" Grid.Column="1" Grid.Row="0" />
+                <Button x:Name="ProductButton"  Background="LightBlue" Grid.Column="0" Grid.Row="1" Click="ProductButton_Click">
+                    <Image Source="Images/Icons/library.png"/>
+                </Button>
+                <Button x:Name="DeliveryButton"  Background="LightBlue" Grid.Column="1" Grid.Row="1" Click="DeliveryButton_Click">
+                    <Image Source="Images/Icons/delivery.png" />
+                </Button>
+            </Grid>
+            </StackPanel>
+        <!-- Рабочая область -->
+            <StackPanel >
+            <Grid Height="583">
+                <Frame x:Name="WorkingPlace" NavigationUIVisibility="Hidden" />
+            </Grid>
+            </StackPanel>
+        </StackPanel>
 </Window>

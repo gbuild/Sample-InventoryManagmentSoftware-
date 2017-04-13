@@ -1,17 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using IMS.Pages;
+using System;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace IMS
 {
@@ -23,6 +12,16 @@ namespace IMS
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void ProductButton_Click(object sender, RoutedEventArgs e)
+        {
+            WorkingPlace.NavigationService.Navigate(new Uri("Pages/Product.xaml", UriKind.Relative));
+        }
+
+        private void DeliveryButton_Click(object sender, RoutedEventArgs e)
+        {
+            WorkingPlace.NavigationService.Navigate(new Uri("Pages/Delivery.xaml", UriKind.Relative));
         }
     }
 }
